@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1</title>
+    <script type="text/javascript">
+        var horas1= parseInt(prompt("Ingresar las horas del primer instante del tiempo"),10);
+        var minutos1= parseInt(prompt("Ingresar los minutos del primer instante del tiempo"),10);
+        var segundos1= parseInt(prompt("Ingresar los segundos del primer instante del tiempo"),10);
+
+        var horas2= parseInt(prompt("Ingresar las horas del segundo instante del tiempo"),10);
+        var minutos2= parseInt(prompt("Ingresar los minutos del segundo instante del tiempo"),10);
+        var segundos2= parseInt(prompt("Ingresar los segundos del segundo instante del tiempo"),10);
+        
+	var tiempo1= horas1*60*60 + minutos1*60 + segundos1;
+	var tiempo2= horas2*60*60 + minutos2*60 + segundos2;
+
+	var diferencia = Math.abs(tiempo1-tiempo2);
+
+	var horas3= Math.floor(diferencia/3600);
+	diferencia -= horas3*3600;
+    	var minutos3= Math.floor(diferencia/60);
+	diferencia-=minutos3*60;
+        var segundos3= diferencia%3600;
+ 	alert("La diferencia es de: " + horas3 + " horas, " + minutos3 + " minutos y " + segundos3 + " segundos" );
+        
+    </script>
+
+</head>
+<body>
+  
+</body>
+</html>
